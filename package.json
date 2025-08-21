@@ -1,0 +1,17 @@
+{
+  "name": "assignment8",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && nodemon server.js",
+    "client": "cd ravenous && npm run dev",
+    "setup": "npm install -D concurrently && concurrently \"npm run clientInstall\" \"npm run serverInstall\"",
+    "clientInstall": "cd ravenous && npm install react react-dom react-hook-form react-hot-toast react-icons react-redux react-router-dom whatwg-fetch zod @hookform/resolvers @reduxjs/toolkit @tippyjs/react && npm install -D eslint eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-react-refresh globals tailwindcss vite @eslint/js @tailwindcss/vite @types/react @types/react-dom @vitejs/plugin-react",
+    "serverInstall": "cd server && npm install bcryptjs cors dotenv express jsonwebtoken mongodb mongoose && npm install -D nodemon"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
