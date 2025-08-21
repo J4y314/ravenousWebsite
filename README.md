@@ -1,1 +1,1 @@
-Submitted by Jeremiah Bartel
+Ravenous Project by Jeremiah Bartel. Back end is available upon request.
